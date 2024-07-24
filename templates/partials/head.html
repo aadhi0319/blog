@@ -85,6 +85,11 @@
     {% endif %}
 </noscript>
 
+{% set production = get_env(name="BLOG_PRODUCTION", default="false") %}
+{% if production == "true" %}
+	{% include "analytics.html" %}
+{% endif %}
+
 {% block ext_head %}
     {#- /* Misc */}}
     {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
