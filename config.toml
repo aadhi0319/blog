@@ -1,0 +1,69 @@
+# The URL the site will be built for
+base_url = "https://blog.aadhithya.cloud"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+minify_html = true
+
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+theme = "papermod"
+
+taxonomies = [
+	{ name = "tags", feed = true }
+]
+
+[search]
+include_title = true
+include_description = true
+include_date = true
+include_path = false
+include_content = true
+truncate_content_length = 1000
+index_format = "elasticlunr_json"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+
+[extra.papermod]
+title = "Blog"
+default_theme = "auto"
+theme = "dark"
+language_direction = "auto"
+keywords = ["exploit", "malware", "vulnerability", "vr", "vulnerability research", "pwn", "binary exploitation"]
+show_theme_toggle = true
+show_scroll_to_top = true
+show_code_copy_buttons = true
+show_reading_time = true
+show_word_count = false
+show_post_nav_links = true
+show_post_meta = true
+copyright = "Copyright © 2024 Aadhithya Kannan. All Rights Reserved."
+default_toc_open = false
+show_post_edit_button = false
+edit_post_url = "https://github.com/aadhi0319/blog/"
+date_format = "%d %B %y"
+navigation = [
+    { url = "$BASE_URL/search", title = "Search" },
+    { url = "$BASE_URL/archive", title = "Archive" },
+    { url = "$BASE_URL/tags", title = "Tags" },
+    { url = "$BASE_URL/about", title = "About" },
+]
+
+home_title = "Blog"
+home_content = "This blog is intended to document my vulnerability research and exploit development journey. Feel free to reach out with questions and feedback!"
+social_icons = [
+    { url = "https://github.com/aadhi0319", title = "GitHub", icon = "github" },
+    { url = "https://infosec.exchange/@aadhithya", title = "Mastodon", icon = "mastodon" },
+    { url = "$BASE_URL/atom.xml", title = "RSS", icon = "rss" },
+]
