@@ -18,6 +18,8 @@ taxonomies = [
 	{ name = "tags", feed = true }
 ]
 
+title = "Aadhithya's Blog"
+
 [search]
 include_title = true
 include_description = true

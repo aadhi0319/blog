@@ -1,3 +1,5 @@
 public/
 
-.vercel
+# experimented with a variety of analytics providers
+templates/google_analytics.html
+templates/cookie_analytics.html
