@@ -5,4 +5,4 @@ production:
 	./zola build
 
 preview:
-	./zola build -u "https://${VERCEL_URL}"
+	./zola build -u "https://${PREVIEW_URL}"
